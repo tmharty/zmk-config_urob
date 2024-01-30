@@ -24,7 +24,7 @@
                         bindings = <
    &trans  &trans     &trans     &trans     &trans     &trans                       &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
    &trans  &kp RC(A)  &kp RC(S)  &kp DEL    &kp RC(F)  &kp ESC                      &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
-   &trans  &kp RC(Z)  &kp RC(X)  &kp RC(C)  &kp RC(V)  &trans                       &trans    &trans     &trans     &trans     &trans  &trans
+   &trans  &kp RC(Z)  &kp RC(X)  &kp RC(C)  &kp RC(V)  &trans                       U_WH_L    U_WH_D     U_WH_U     U_WH_R     &trans  &trans
                                  &trans     &trans     &trans                       &mo 3     &trans     &trans
                         >;
                 };
@@ -38,9 +38,9 @@
                 };
                 mouse {
                         bindings = <
-   &trans  &trans  &mkp MCLK  &mkp RCLK  &mkp LCLK  &trans                          &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK  &trans  &trans
-   &trans  &trans  &trans     &trans     &trans     &trans                          &trans  &trans     &trans     &trans     &trans  &trans
-   &trans  &trans  &trans     &trans     &trans     &trans                          &trans  &trans     &trans     &trans     &trans  &trans
+   &trans  &trans  U_BTN3     U_BTN2     U_BTN1     &trans                          &trans  U_BTN1     U_BTN2     U_BTN3     &trans  &trans
+   &trans  &trans  &trans     &trans     &trans     &trans                          U_MS_L  U_MS_D     U_MS_U     U_MS_R     &trans  &trans
+   &trans  &trans  &trans     &trans     &trans     &trans                          U_WH_L  U_WH_D     U_WH_U     U_WH_R     &trans  &trans
                               &trans     &trans     &trans                          &trans  &trans     &trans
                         >;
                 };
