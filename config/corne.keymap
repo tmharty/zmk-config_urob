@@ -10,6 +10,20 @@
 #include "mouse.dtsi"
 
 / {
+    macros {
+        zed_em_kay: zed_em_kay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Z &kp M &kp K>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
+    };
+};
+
+/ {
         keymap {
                 compatible = "zmk,keymap";
                 qwerty {
@@ -24,7 +38,7 @@
                         bindings = <
    &trans  &trans     &trans     &trans     &trans     &trans                       &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
    &trans  &kp RC(A)  &kp RC(S)  &kp DEL    &kp RC(F)  &kp ESC                      &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
-   &trans  &kp RC(Z)  &kp RC(X)  &kp RC(C)  &kp RC(V)  &trans                       U_WH_L    U_WH_D     U_WH_U     U_WH_R     &trans  &trans
+   &trans  &kp RC(Z)  &kp RC(X)  &kp RC(C)  &kp RC(V)  &zed_em_kay                  U_WH_L    U_WH_D     U_WH_U     U_WH_R     &trans  &trans
                                  &trans     &trans     &to 0                        &mo 3     &trans     &trans
                         >;
                 };
