@@ -20,6 +20,16 @@
                 , <&macro_release &kp LSHFT>
                 ;
         };
+        kill_eol: kill_eol {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp END>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp RC(X)>
+                ;
+        };
     };
 };
 
@@ -38,7 +48,7 @@
                         bindings = <
    &trans  &trans     &trans     &trans     &trans     &trans                       &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
    &trans  &kp RC(A)  &kp RC(S)  &kp DEL    &kp RC(F)  &kp ESC                      &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
-   &trans  &kp RC(Z)  &kp RC(X)  &kp RC(C)  &kp RC(V)  &zed_em_kay                  U_WH_L    U_WH_D     U_WH_U     U_WH_R     &trans  &trans
+   &trans  &kp RC(Z)  &kp RC(X)  &kp RC(C)  &kp RC(V)  &kill_eol                        U_WH_L    U_WH_D     U_WH_U     U_WH_R     &trans  &trans
                                  &trans     &trans     &to 0                        &mo 3     &trans     &trans
                         >;
                 };
