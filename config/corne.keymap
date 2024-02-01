@@ -48,7 +48,7 @@
                         bindings = <
    &trans  &trans     &trans     &trans     &trans     &trans                       &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
    &trans  &kp RC(A)  &kp RC(S)  &kp DEL    &kp RC(F)  &kp ESC                      &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
-   &trans  &kp RC(Z)  &kp RC(X)  &kp RC(C)  &kp RC(V)  &kill_eol                        U_WH_L    U_WH_D     U_WH_U     U_WH_R     &trans  &trans
+   &trans  &kp RC(Z)  &kp RC(X)  &kp RC(C)  &kp RC(V)  &kill_eol                    U_WH_L    U_WH_D     U_WH_U     U_WH_R     &trans  &trans
                                  &trans     &trans     &to 0                        &mo 3     &trans     &trans
                         >;
                 };
