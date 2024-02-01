@@ -12,8 +12,8 @@
   delay-ms = <0>;                   // 10
 };
 
-#define U_MOUSE_MOVE_MAX 600       // 600
-#define U_MOUSE_SCROLL_MAX 10      // 10
+#define U_MOUSE_MOVE_MAX 1200       // 600
+#define U_MOUSE_SCROLL_MAX 20      // 10
 
 #undef MOVE_UP
 #undef MOVE_DOWN
